@@ -15,5 +15,7 @@ Si en algun futuro la aplicacion crece, PM2 es buena opcion para clusterizar la 
 
 Documentacion de la api: https://documenter.getpostman.com/view/43446761/2sAYkKJy2w
 
-Ejecutar el siguiente comando para iniciar la aplicacion:
-docker-compose up --build
+Ejecutar los siguientes comandos para iniciar la aplicacion:
+1. git clone https://github.com/jc-alonsob25/TestPrueba.git
+2. cd tu-repositorio
+3. docker-compose up --build
