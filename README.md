@@ -17,5 +17,5 @@ Documentacion de la api: https://documenter.getpostman.com/view/43446761/2sAYkKJ
 
 Ejecutar los siguientes comandos para iniciar la aplicacion:
 1. git clone https://github.com/jc-alonsob25/TestPrueba.git
-2. cd tu-repositorio
+2. cd TestPrueba
 3. docker-compose up --build
