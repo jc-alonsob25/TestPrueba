@@ -8,6 +8,11 @@ Este proyecto es una API REST desarrollada con **Node.js**, **Express** y **Mong
 - **Docker** + **Docker Compose** 🐳
 - **PM2** (Administrador de procesos)
 
+La aplicacion esta dividida en:
+1. controllers: codigo de cada funcionalidad de la API, separadas en user.js y attendance.js
+2. models: modelos de las entidades que se guardan en la base de datos (MongoDB)
+3. routes: definicion de las rutas de cada controlador
+
 Node.js es perfecto para aplicaciones que requieren multiples solicitudes concurrentes, es de alto rendimiento y escalable lo que permite apps rapidas.
 Utilizar el framework express.js reduce bastante el tiempo de desarrollo para APIs REST.
 Ya que no es una aplicacion muy compleja, usar mongoDB es una excelente opcion ya que permite guardar los datos de manera muy rapida y facilita la lectura de la informacion ya que esta basada en documentos JSON.
