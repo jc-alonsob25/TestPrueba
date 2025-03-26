@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+    ports:
+      - "3800:3800"
+    environment:
+      - MONGO_URI=${MONGO_URI}  # Cargar la URI desde el archivo .env
+    depends_on:
+      - mongo
+    restart: always
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin           # Usuario administrador
+      - MONGO_INITDB_ROOT_PASSWORD=payrollserver   # Contraseña del administrador
+    volumes:
+      - mongodb_data:/data/db
+    restart: always
+
+volumes:
+  mongodb_data:
